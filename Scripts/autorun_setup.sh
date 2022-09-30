@@ -67,6 +67,10 @@ nvconf set 0 Camera.Menu.LoopingVideo 1MIN
 echo "loop 1" > $VIDEOPARAM
 $FW_SETENV VideoClipTime 1
 
+# WNR ON ??? TEST
+echo "wnr 1" > $VIDEOPARAM
+nvconf set 0 Camera.Menu.WNR ON
+
 # 10000000 = 10mbit For RTSP streaming on rtsp://192.168.10.1/liveRTSP/av4 for front or rtsp://192.168.10.1/liveRTSP/av5 for back camera
 nvconf set 1 streamer.video.bitrate 60000000
 # TURN IT OFF :) 
