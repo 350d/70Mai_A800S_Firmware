@@ -5,7 +5,7 @@ Features available:
 
 - No logo on recordings
 - Hight quality video compression (50Mbit/s + minQP 16)
-- Sony 3DNR enabled
+- Sony WDR/3DNR enabled
 - Autorun scripting
 
 Wifi enabled by default
