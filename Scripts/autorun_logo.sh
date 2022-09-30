@@ -11,3 +11,7 @@ cp /mnt/mmc/logo.jpg /misc/boot0_480x854.jpg
 mkdir /mnt/mmc/Autorun_completed
 mv /mnt/mmc/logo.jpg /mnt/mmc/Autorun_completed/logo.jpg
 mv /mnt/mmc/autorun_logo.sh /mnt/mmc/Autorun_completed/autorun_logo.sh
+
+sync
+sleep 1
+reboot

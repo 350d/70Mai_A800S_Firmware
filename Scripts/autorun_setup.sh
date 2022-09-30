@@ -91,3 +91,7 @@ nvconf set 1 wireless.ap.ipaddr 192.168.10.1
 # 8 characters only
 nvconf set 1 wireless.ap.wpa.psk 12345678
 
+sync
+sleep 1
+reboot
+
