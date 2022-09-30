@@ -41,6 +41,12 @@ nvconf set 0 Camera.Menu.VoiceSwitch OFF
 echo "audiorec 0" > $VIDEOPARAM
 nvconf set 0 Camera.Menu.ApkGetMic ON
 
+echo "AoVol -100" > $VIDEOPARAM
+nvconf set 0 Camera.Menu.ApkGetVol OFF
+
+#echo "AoVol -20" > $VIDEOPARAM
+#nvconf set 0 Camera.Menu.ApkGetVol VOL4
+
 echo "lcdpwrsave 30" > $VIDEOPARAM
 nvconf set 0 Camera.Menu.LCDPower 30SEC
 

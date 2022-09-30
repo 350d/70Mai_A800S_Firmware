@@ -5,10 +5,15 @@ Features available:
 
 - No logo on recordings
 - Hight quality video compression (50Mbit/s + minQP 16)
+- Sony 3DNR enabled
 - Autorun scripting
 
+Wifi enabled by default
 Default Wifi IP: 192.168.10.1
-Default Wifi Password: npasaran
+Default Wifi SSID: 70mai_A800S
+Default Wifi Password: multipas
+
+All sounds muted by default
 
 # Install
 
