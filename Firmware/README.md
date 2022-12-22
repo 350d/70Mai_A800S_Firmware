@@ -1,4 +1,4 @@
-# Firmware 1.0.13ww Custom
+# Firmware 1.0.14ww Custom
 
 Put in on SD card.
 Power up your device.

@@ -1,10 +1,10 @@
 # 70Mai A800S Custom Firmware
-This Firmware based on 1.0.13ww OTA
+This Firmware based on 1.0.14ww OTA
 
 Features available:
 
 - No logo on recordings
-- Hight quality video compression (50Mbit/s + minQP 16)
+- Hight quality video compression (50Mbit/s + minQP 16) (1.0.14ww in progress)
 - Sony WDR/3DNR enabled and updated to Level 3
 - Autorun scripting
 
