@@ -4,7 +4,7 @@ This Firmware based on 1.0.14ww OTA
 Features available:
 
 - No logo on recordings
-- Hight quality video compression (50Mbit/s + minQP 16) (1.0.14ww in progress)
+- Hight quality video compression (50Mbit/s + minQP 16)
 - Sony WDR/3DNR enabled and updated to Level 3
 - Autorun scripting
 
