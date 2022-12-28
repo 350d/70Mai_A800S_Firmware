@@ -11,6 +11,8 @@ FW_SETENV=/config/bin/fw_setenv
 
 #for f in /mnt/mmc/autorun_*.sh; do if [ -f "$f" ]; then source $f; fi done
 
+nvconf set 0 UserGuide OFF
+
 #0 mph, 1 km/h
 echo "SpeedUnit 1" > $VIDEOPARAM
 nvconf set 0 Camera.Menu.SpeedUnit km/h
@@ -68,7 +70,8 @@ echo "voice 0" > $VIDEOPARAM
 $FW_SETENV VoiceSwitch 0
 nvconf set 0 Camera.Menu.VoiceSwitch OFF
 
-echo "audiorec 1" > $VIDEOPARAM
+# 1 OFF, 0 ON
+echo "audiorec 0" > $VIDEOPARAM
 nvconf set 0 Camera.Menu.ApkGetMic ON
 
 echo "AoVol -100" > $VIDEOPARAM
@@ -159,6 +162,7 @@ mv /mnt/mmc/autorun_setup.sh /mnt/mmc/Autorun_completed/autorun_setup.sh
 # UPDATE SETTINGS
 echo "0" > $REC_STATUS
 echo "rec 0" > $VIDEOPARAM
+sleep 1
 echo "1" > $REC_STATUS
 echo "rec 1" > $VIDEOPARAM
 
@@ -166,7 +170,9 @@ echo "rec 1" > $VIDEOPARAM
 nvconf set 1 wireless.ap.ssid 70mai_A800S_cad1
 # 8 characters only
 nvconf set 1 wireless.ap.wpa.psk multipas
-nvconf set 1 wireless.ap.ipaddr 192.168.10.1
+#nvconf set 1 wireless.ap.ipaddr 192.168.10.1
+#nvconf set 1 wireless.ap.dhcp.start=192.168.10.0
+#nvconf set 1 wireless.ap.dhcp.end=192.168.10.14
 
 # SYNC SETTINGS AND REBOOT
 
