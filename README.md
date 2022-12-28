@@ -10,8 +10,6 @@ Features available:
 
 Wifi enabled by default
 Default Wifi IP: 192.168.10.1
-Default Wifi SSID: 70mai_A800S_cad1
-Default Wifi Password: multipas
 
 All sounds muted by default
 
