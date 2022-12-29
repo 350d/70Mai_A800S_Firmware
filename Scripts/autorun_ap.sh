@@ -16,18 +16,21 @@ PSK=multipas
 IPADDR=192.168.1.1
 SUBNETMASK=255.255.255.0
 
-nvconf set 1 wireless.ap.ssid $SSID
-nvconf set 1 wireless.ap.wpa.psk $PSK
-nvconf set 1 wireless.apstaswitch AP
-
-sleep 1
-
 echo " Kill all process of STA Mode"
 busybox killall udhcpc
 busybox killall wpa_supplicant
 busybox killall goahead
 ifconfig wlan0 down
 rmmod cfg80211
+
+nvconf set 1 wireless.ap.ssid $SSID
+nvconf set 1 wireless.ap.wpa.psk $PSK
+nvconf set 1 wireless.ap.ipaddr $IPADDR
+nvconf set 1 wireless.ap.subnetmask $SUBNETMASK
+nvconf set 1 wireless.apstaswitch AP
+
+
+
 
 echo "Launch Wifi module AP Mode ..."
 

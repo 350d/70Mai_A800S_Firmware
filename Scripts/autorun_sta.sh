@@ -21,7 +21,6 @@ busybox killall udhcpd
 busybox killall hostapd
 busybox killall goahead
 ifconfig wlan0 down
-
 rmmod cfg80211
 
 nvconf set 1 wireless.sta.ssid $SSID
@@ -32,22 +31,17 @@ nvconf set 1 wireless.apstaswitch STA
 
 printf '#ctrl_interface=/tmp/wpa_supplican\nupdate_config=1  \n\nnetwork={  \n    proto=WPA2\n    key_mgmt=WPA-PSK\n    ssid="%s"  \n    psk="%s"  \n}\n' "$SSID" "$PSK" > /mnt/mmc/wpa_supplicant.conf
 
-#cp -f /mnt/mmc/wpa_supplicant1.conf /customer/wifi/wpa_supplicant.conf
-#rm /mnt/mmc/wpa_supplicant.conf 
-
-#source /customer/wifi/apsta_switch.sh > /mnt/mmc/apsta_switch.txt
-
-#cp /customer/wifi/wpa_supplicant.conf /mnt/mmc/wpa_supplicant2.conf
-
 echo "Launch Wifi module STA Mode..."
 
 insmod /customer/wifi/lib/cfg80211.ko
 sleep 1
-
 ifconfig wlan0 up
 wpa_supplicant -Dnl80211 -iwlan0 -c /mnt/mmc/wpa_supplicant.conf -B
 udhcpc -iwlan0 -b
 #static ip
 ifconfig wlan0 $IPADDR netmask $SUBNETMASK
+
+
+
 
 source /customer/wifi/run_goahead.sh
