@@ -9,7 +9,7 @@ REC_STATUS=/tmp/rec_status
 VIDEOPARAM=/tmp/cardv_fifo
 FW_SETENV=/config/bin/fw_setenv
 
-#for f in /mnt/mmc/autorun_*.sh; do if [ -f "$f" ]; then source $f; fi done
+##############################
 
 nvconf set 0 Camera.Menu.UserGuide OFF
 

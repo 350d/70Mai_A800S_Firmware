@@ -5,6 +5,11 @@
 ##############################
 export PATH=/sbin:/bin:/customer/wifi:/usr/bin:/usr/sbin
 export LD_LIBRARY_PATH=/lib:/customer/wifi/lib
+REC_STATUS=/tmp/rec_status
+VIDEOPARAM=/tmp/cardv_fifo
+FW_SETENV=/config/bin/fw_setenv
+
+##############################
 
 # restore default logo
 #cp /customer/boot0_480x854_original.jpg /misc/boot0_480x854.jpg
