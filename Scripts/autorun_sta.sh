@@ -59,7 +59,6 @@ udhcpc -iwlan0 -b
 #static ip
 ifconfig wlan0 $IPADDR netmask $SUBNETMASK
 
-
-
-
 source /customer/wifi/run_goahead.sh
+
+echo audioplay 1 /customer/audio/Button.wav > $VIDEOPARAM
