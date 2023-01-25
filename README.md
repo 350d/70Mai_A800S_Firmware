@@ -7,6 +7,7 @@ Features available:
 - Hight quality video compression (50Mbit/s + minQP 16)
 - Sony WDR/3DNR enabled and updated to Level 3
 - Autorun scripting
+- ADAS sounds changed to short beeps
 
 Wifi enabled by default
 Default Wifi SSID: 70mai_A800S_cad1
