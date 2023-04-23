@@ -1,5 +1,5 @@
 # 70Mai A800S Custom Firmware
-This Firmware based on 1.0.14ww OTA
+This Firmware based on 1.0.19ww OTA
 
 Features available:
 
