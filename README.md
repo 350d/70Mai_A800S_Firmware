@@ -17,7 +17,7 @@ All sounds muted by default
 
 # Install
 
-Put firmware file and your autorun scripts (if any) on SD card.
+Put firmware file, FORCEUPD.txt and your autorun scripts (if any) on SD card.
 Power up your device.
 Wait till reboot.
 
