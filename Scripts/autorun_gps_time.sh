@@ -49,3 +49,6 @@ hwclock -w
 mkdir /mnt/mmc/Autorun_completed
 mv /mnt/mmc/autorun_gps_time.sh /mnt/mmc/Autorun_completed/autorun_gps_time.sh
 
+# CREDITS
+# THANKS TO H45242 4PDA USER 
+# https://4pda.to/forum/index.php?showuser=1227870
