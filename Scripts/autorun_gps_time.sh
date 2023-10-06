@@ -40,6 +40,13 @@ hour=$(date "+%H")
 
 date="${year}-${month}-${nmea_day} ${hour}:${nmea_min}:${nmea_sec}"
 
+## CHANGE YOUR TIMEZONE IF NEEDED
+## -12 GMT_M_12 ... 0 GMT00 ... 14 GMT_P_14
+
+echo "timezone 3" > $VIDEOPARAM
+nvconf set 0 Camera.Menu.TimeZone GMT_P_3
+
+echo "time zone: "{$TZ}
 echo "old date: "$(date)
 echo -n "new date: "
 date "${date}"
@@ -48,6 +55,8 @@ hwclock -w
 # MOVE AUTORUN SCRIPT
 mkdir /mnt/mmc/Autorun_completed
 mv /mnt/mmc/autorun_gps_time.sh /mnt/mmc/Autorun_completed/autorun_gps_time.sh
+
+echo audioplay 1 /customer/audio/Button.wav > $VIDEOPARAM
 
 # CREDITS
 # THANKS TO H45242 4PDA USER 
