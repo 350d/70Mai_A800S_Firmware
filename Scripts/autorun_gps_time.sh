@@ -36,17 +36,20 @@ nmea_sec=$(hexdump -v -s 0x514 -n 4 -e '1/4 "%d"' /tmp/car_info)
 
 year=$((${nmea_year}+1900))
 month=$((${nmea_month}+1))
-hour=$(date "+%H")
 
-date="${year}-${month}-${nmea_day} ${hour}:${nmea_min}:${nmea_sec}"
-
-## CHANGE YOUR TIMEZONE IF NEEDED
+## CHANGE YOUR TIMEZONE IF NEEDED (ITS DOESNT WORK ANYWAY)
 ## -12 GMT_M_12 ... 0 GMT00 ... 14 GMT_P_14
 
 echo "timezone 3" > $VIDEOPARAM
 nvconf set 0 Camera.Menu.TimeZone GMT_P_3
 
-echo "time zone: "{$TZ}
+## CHANGE TIMEZONE MANUALLY
+
+#hour=$(date "+%H")
+hour=$((${nmea_hour}+3))
+
+date="${year}-${month}-${nmea_day} ${hour}:${nmea_min}:${nmea_sec}"
+
 echo "old date: "$(date)
 echo -n "new date: "
 date "${date}"

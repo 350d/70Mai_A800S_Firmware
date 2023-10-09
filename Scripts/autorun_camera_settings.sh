@@ -12,6 +12,7 @@ FW_SETENV=/config/bin/fw_setenv
 ##############################
 
 ## GET DEFAULTS IF NEEDED WITH THIS
+## FRONT CAMERA
 
 #nvconf get 0 Camera.Menu.Contrast
 #nvconf get 0 Camera.Menu.Hue
@@ -23,7 +24,7 @@ FW_SETENV=/config/bin/fw_setenv
 
 ## PICTURE TUNE
 
-echo "con 8" > /tmp/cardv_fifo
+echo "con 4" > /tmp/cardv_fifo
 nvconf set 0 Camera.Menu.Contrast 8
 
 echo "sat 45" > /tmp/cardv_fifo
