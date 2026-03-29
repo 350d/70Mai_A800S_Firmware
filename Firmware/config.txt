@@ -1,0 +1,8 @@
+wifi_mode=STA
+wifi_ap_ssid=70mai_A800S
+wifi_ap_pass=12345678
+wifi_sta_ssid=MYCARWIFI
+wifi_sta_pass=carhotspotpass
+wifi_sta_time_sync=1
+gps_time_sync=0
+timezone=2
