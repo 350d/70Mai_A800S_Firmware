@@ -42,6 +42,8 @@ wifi_sta_pass=carhotspotpass
 wifi_sta_time_sync=1/0
 gps_time_sync=1/0
 timezone=2
+telnet=1/0
+ftpd=1/0
 ```
 
 # USB Disk mode
