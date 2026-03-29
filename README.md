@@ -67,7 +67,7 @@ I've managed to unpack/repack pixel font maps on A800S!
 Now its possible to use any ttf on firmware build step to update build in overlay font
 CARDV binary patched to fix 4K render issue with new fonts
 
-<img width="1096" height="246" alt="Screenshot+2026-03-28+at+15 03 11" src="https://github.com/user-attachments/assets/f457c76e-1949-41ef-9759-8c9abc391fb2" />
+<img width="1096" height="246" alt="New video overlay font" src="https://github.com/user-attachments/assets/f457c76e-1949-41ef-9759-8c9abc391fb2" />
 
 # Bootup logo update
 
