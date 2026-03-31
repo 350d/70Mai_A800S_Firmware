@@ -5,4 +5,5 @@ wifi_sta_ssid=MYCARWIFI
 wifi_sta_pass=carhotspotpass
 wifi_sta_time_sync=1
 gps_time_sync=0
-timezone=2
+timezone=3
+debug=1
