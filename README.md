@@ -37,9 +37,11 @@ Use config.txt file on SD card to control all settings.
 wifi_mode=STA/AP/OFF
 wifi_ap_ssid=70mai_A800S
 wifi_ap_pass=12345678
+wifi_ap_band=2.4G/5G
 wifi_sta_ssid=MYCARWIFI
 wifi_sta_pass=carhotspotpass
 wifi_sta_time_sync=1/0
+wifi_sta_band=2.4G/5G
 gps_time_sync=1/0
 timezone=2
 telnet=1/0
