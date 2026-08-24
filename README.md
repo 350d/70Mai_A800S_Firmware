@@ -34,18 +34,21 @@ Wait till reboot.
 Use config.txt file on SD card to control all settings.
 
 ```
-wifi_mode=STA/AP/OFF
+wifi_mode=STA # STA/AP/OFF
 wifi_ap_ssid=70mai_A800S
 wifi_ap_pass=12345678
-wifi_ap_band=2.4G/5G
+wifi_ap_band=2.4G # 2.4G/5G
 wifi_sta_ssid=MYCARWIFI
 wifi_sta_pass=carhotspotpass
-wifi_sta_time_sync=1/0
-wifi_sta_band=2.4G/5G
-gps_time_sync=1/0
+wifi_sta_time_sync=1 # 1/0
+wifi_sta_band=2.4G # 2.4G/5G
+wifi_sta_ip=192.168.11.46 # STATIC IP MODE
+wifi_sta_gateway=192.168.11.1 # STATIC IP MODE GATEWAY
+wifi_sta_freq_list=5180 5200 5220 5240 5745 5765 5785 5805 # OPTIONAL, 2412 2437 2462 FOR 2.4G COMMON CHANNELS
+gps_time_sync=1 # 1/0
 timezone=2
-telnet=1/0
-ftpd=1/0
+telnet=1 # 1/0
+ftpd=1 # 1/0
 ```
 
 # USB Disk mode
